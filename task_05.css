@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1c1c;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-app {
+  background-color: #2b2b2b;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+}
+
+.weather-app:hover {
+  transform: translateY(-10px);
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 15px;
+  border: 2px solid #4a90e2;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  background-color: #3b3b3b;
+  color: #ffffff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus {
+  border-color: #80c8ff;
+}
+
+.search-btn {
+  background-color: #4a90e2;
+  border: none;
+  padding: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-btn:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+
+.city-date-section {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.city-date-section .city {
+  font-size: 2.5rem;
+  opacity: 0.9;
+}
+
+.city-date-section .date {
+  background-color: #4a90e2;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  color: #ffffff;
+}
+
+.temperature-info {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.temperature-info .temp {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.temperature-info .description {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.temperature-info .description i {
+  font-size: 2rem;
+  opacity: 0.8;
+}
+
+.temperature-info .description span {
+  font-size: 1.5rem;
+}
+
+.additional-info {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.wind-info,
+.humidity-info,
+.visibility-info {
+  background-color: #4a90e2;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.additional-info .material-icons {
+  font-size: 2.5rem;
+  opacity: 0.8;
+}
+
+.wind-info div,
+.humidity-info div,
+.visibility-info div {
+  text-align: center;
+}
